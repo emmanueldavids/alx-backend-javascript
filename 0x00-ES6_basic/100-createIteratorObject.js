@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 "use strict";
 
 export default function createIteratorObject(report) {
