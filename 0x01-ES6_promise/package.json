@@ -1,0 +1,19 @@
+{
+  "name": "0x01-es6_promise",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node 0-main.js && node 1-main.js && node 2-main.js && node 3-main.js"
+  },
+  "dependencies": {
+    "utils": "^0.2.2",
+    "utils.js": "^1.0.1",
+    "jest": "^27.4.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
