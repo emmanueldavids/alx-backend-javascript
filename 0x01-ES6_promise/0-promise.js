@@ -2,17 +2,16 @@
 
 "use strict";
 
-// This is script returns a promise using function getResponseFromAPI()
 
 function getResponseFromAPI() {
-
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('This is the response from the API');
-        }, 1000);
-        
+      // Simulate an asynchronous API call or network request
+      setTimeout(() => {
+        const data = { message: "Success!", code: 200 };
+        // Resolve the Promise with the data
+        resolve(data);
+      }, 2000); // Simulating a 2-second delay
     });
-}
-
-export default getResponseFromAPI;
-
+  }
+  
+  export default getResponseFromAPI;
