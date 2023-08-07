@@ -50,3 +50,4 @@ function printTeacher(firstName: string, lastName: string): string {
 // Test example
 const result: string = printTeacher("John", "Doe");
 console.log(result); // Output: J. Doe
+
