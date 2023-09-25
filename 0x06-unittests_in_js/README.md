@@ -20,10 +20,10 @@ Curriculum <br>
 ## Requirements
 
 * Code executed on Ubuntu 18.04 using Node 12.x.x
-* Allowed editors: `vi`, `vim`, `emacs`, `Visual Studio Code`
-* All file should end with a new line
-* Mandatory `README.md` file
-* Code use the `js` extension
+* Allowed editors: `vi`, `vim`, `emacs`, `Visual Studio Code`.
+* All file should end with a new line.
+* Mandatory `README.md` file.
+* Code use the `js` extension.
 * When running every test with `npm run test *.test.js`, everything should pass correctly without warning or error
 
 ## Finally...
