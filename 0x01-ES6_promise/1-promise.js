@@ -2,21 +2,21 @@
 
 // resolving the promise using two atributes for the resolve
 
-'use strict';
 
 function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success){
-      resolve({
+      resolve( {
         'status': 200,
-        'body': 'Success'
+        'body': 'Success',
       });
 
     } else {
-      reject('The fake API is not working currently');
+
+        reject('The fake API is not working currently');
     }
-       
-  });
+
+    });
 }
 
 export default getFullResponseFromAPI;
