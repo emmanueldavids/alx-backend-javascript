@@ -2,7 +2,6 @@
 
 // resolving the promise using two atributes for the resolve
 
-
 function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success) {
