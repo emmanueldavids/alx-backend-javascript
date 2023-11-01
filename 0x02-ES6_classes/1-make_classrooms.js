@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-import ClassRoom from './0-classroom';
+import './0-classroom';
 
 export default function initializeRooms() {
   const roomSizes = [19, 20, 34];
