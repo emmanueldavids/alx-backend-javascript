@@ -2,7 +2,7 @@
 
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    if (typeof name !== 'string' || typeof length != 'number' || !Array.isArray(students)) {
+    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
       throw new Error('Invalid attributes. Expected name (string), length (number), and students (array of strings).');
     }
 
