@@ -10,8 +10,8 @@ function getFullResponseFromAPI(success) {
         body: 'Success',
       });
     } else {
-      reject( new Error('The fake API is not working currently'));
-      }
+      reject(new Error('The fake API is not working currently'));
+    }
   });
 }
 
