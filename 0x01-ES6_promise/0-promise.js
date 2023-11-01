@@ -1,7 +1,5 @@
 #!/usr/bin/node
 
-'use strict';
-
 // This is script returns a promise using function getResponseFromAPI()
 
 function getResponseFromAPI() {
