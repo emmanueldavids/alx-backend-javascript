@@ -5,19 +5,18 @@
 "use strict";
 
 function handleResponseFromAPI(promise) {
-  return promise 
-    .then((data) => {
+  return promise
+    .then(() => {
       console.log('Got a response from the API');
-        return {
-          'status': 200,
-          'body': 'success'
+      return {
+        'status': 200,
+        'body': 'success',
       };
     })
 
-    .catch((error) => {
+    .catch(() => {
       return new Error();
     });
-
 }
 
 export default handleResponseFromAPI;
