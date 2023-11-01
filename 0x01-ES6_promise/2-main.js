@@ -1,4 +1,6 @@
-import handleResponseFromAPI from "./2-then";
+#!/usr/bin/node
 
-const promise = Promise.resolve();
+import handleResponseFromAPI from "./2-then.js";
+
+const promise = Promise.resolve(); // You can replace this with your actual promise.
 handleResponseFromAPI(promise);
