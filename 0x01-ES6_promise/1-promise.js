@@ -2,7 +2,6 @@
 
 // resolving the promise using two atributes for the resolve
 
-"use strict";
 
 function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
@@ -12,7 +11,7 @@ function getFullResponseFromAPI(success) {
         'body': 'Success',
       });
     } else {
-        reject('The fake API is not working currently');
+      reject('The fake API is not working currently');
     }
   });
 }
