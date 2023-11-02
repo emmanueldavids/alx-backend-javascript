@@ -40,6 +40,7 @@ export default class HolbertonCourse {
   set students(newStudents) {
     if (!Array.isArray(newStudents)) {
       throw new Error('invalid name. Expected a string.');
+      this._students = newStudents;
     }
   }
 }
