@@ -1,46 +1,46 @@
 #!/usr/bin/node
 
 export default class HolbertonCourse {
-    constructor(name, length, students){
-        if (typeof name != 'string' || typeof length != 'number' || !Array.isArray(students)){
-            
-            throw new Error('Invalid attributes. Expected name (string), length (number), and students (array of strings).');
-        }
-        
-        this._name = name;
-        this._length = length;
-        this._students = students;
+  constructor(name, length, students) {
+    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
+      throw new Error('Invalid attributes. Expected name (string), length (number), and students (array of strings).');
     }
 
-    get name(){
-        return this._name;
-    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
+  }
 
-    get length(){
-        return this._length;
-    }
+  get name() {
+    return this._name;
+  }
 
-    get students(){
-        return this.students;
-    }
+  get length() {
+    return this._length;
+  }
 
-    set name(newName){
-        if (typeof newName != 'string'){
-            throw new Error('invalid name. Expected a string.');
-        }
-        this._name = newName;
-    }
+  get students() {
+    return this.students;
+  }
 
-    set length(newLength){
-        if (typeof newLength != 'number'){
-            throw new Error('invalid name. Expected a string.');
-        }
-        this._length = newLength;
+  set name(newName) {
+    if (typeof newName !== 'string') {
+      throw new Error('invalid name. Expected a string.');
     }
+    this._name = newName;
+  }
 
-    set students(newStudents){
-        if (!Array.isArray(newStudents)){
-            throw new Error('invalid name. Expected a string.');
-        }
+  set length(newLength) {
+    if (typeof newLength !== 'number') {
+      throw new Error('invalid name. Expected a string.');
     }
+    this._length = newLength;
+  }
+
+  set students(newStudents) {
+    if (!Array.isArray(newStudents)) {
+      throw new Error('invalid name. Expected a string.');
+    }
+    this._students = newStudents;
+  }
 }
