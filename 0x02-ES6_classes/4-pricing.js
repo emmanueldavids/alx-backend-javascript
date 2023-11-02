@@ -2,10 +2,9 @@
 
 import Currency from './3-currency';
 
-
 export default class Pricing {
   constructor(amount, currency) {
-    if (typeof amount != 'number' || typeof currency != 'string') {
+    if (typeof amount !== 'number' || typeof currency !== 'string') {
       throw new Error('Invalid input format');
     }
 
@@ -22,7 +21,7 @@ export default class Pricing {
   }
 
   set amount(newAmount) {
-    if (typeof newAmount != 'number') {
+    if (typeof newAmount !== 'number') {
       throw new Error('Invalid input format');
     }
 
@@ -30,7 +29,7 @@ export default class Pricing {
   }
 
   set currency(newCurrency) {
-    if (typeof this.newCurrency != 'string') {
+    if (typeof this.newCurrency !== 'string') {
       throw new Error('Invalid input format');
     }
     this._currency = newCurrency;
@@ -38,14 +37,13 @@ export default class Pricing {
 
   displayFullPrice() {
     const currencyInstance = new Currency(this._amount, this._currency);
-      return `${this._amount} ${currencyInstance.currency_name} (${currencyInstance.currency_code})`;
+    return `${this._amount} ${currencyInstance.currency_name} (${currencyInstance.currency_code})`;
   }
 
   static convertPrice(amount, conversionRate) {
-    if (typeof amount != 'number' || typeof conversionRate != 'number'){
+    if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
       throw new Error('Invalid input format');
     }
     return amount * conversionRate;
-
   }
 }
