@@ -1,5 +1,5 @@
 export default function cleanSet(set, startString) {
-  let result = "";
+  let result = '';
   if (!startString || !startString.length) return result;
   set.forEach((i) => {
     if (i && i.startsWith(startString))
