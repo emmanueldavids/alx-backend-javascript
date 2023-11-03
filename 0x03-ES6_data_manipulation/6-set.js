@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-export default function setFromArray(Array){
-    const to_set = new Set(Array)
+export default function setFromArray(Array) {
+  const to_Set = new Set(Array);
 
-    return to_set;
+  return to_Set;
 
 }
